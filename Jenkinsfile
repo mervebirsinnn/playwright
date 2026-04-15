@@ -28,7 +28,7 @@ pipeline {
     post {
         always {
             // Testler geçse de kalsa da raporları sakla
-            publibatHTML(target: [
+            publishHTML(target: [
                 allowMissing: false,
                 alwaysLinkToLastBuild: false,
                 keepAll: true,
